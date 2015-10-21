@@ -32,7 +32,7 @@ if (Meteor.isClient) {
 
 if (Meteor.isServer) {
 
-  // Insert large, deep document
+  // Insert large document
   if (!Orders.findOne()) {
     let order = {};
     _.range(8000).forEach(i => order[i] = i);
